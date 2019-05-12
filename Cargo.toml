@@ -1,0 +1,20 @@
+[package]
+name = "macadam"
+version = "0.1.0"
+authors = ["Brett Smith <bc.smith@sas.com>"]
+edition = "2018"
+
+[dependencies]
+dotenv = "0.10.1"
+rocket = "0.4.1"
+rocket_codegen = "0.4.1"
+
+[dependencies.diesel]
+version = "1.1.1"
+default-features = false
+features = ["sqlite"]
+
+[dependencies.diesel_infer_schema]
+version = "1.1.0"
+default-features = false
+features = ["sqlite"]
